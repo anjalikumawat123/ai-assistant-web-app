@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<title>AI Assistant</title>
+<link rel="stylesheet"
+href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🤖 AI Assistant</h1>
+
+<div id="history">
+<h3>Chat History</h3>
+</div>
+
+<button onclick="toggleDarkMode()">
+🌙 Dark Mode
+</button>
+
+<select id="task">
+<option value="qa">
+Question Answering
+</option>
+
+<option value="summary">
+Summarization
+</option>
+
+<option value="story">
+Story Generation
+</option>
+</select>
+
+<textarea
+id="userInput"
+placeholder="Enter your text here">
+</textarea>
+
+<button onclick="startVoice()">
+🎤 Voice Input
+</button>
+
+<button onclick="processInput()">
+Generate Response
+</button>
+
+<div id="output">
+AI response will appear here...
+</div>
+<button onclick="copyResponse()">
+📋 Copy Response
+</button>
+<button onclick="clearResponse()">
+    Clear
+</button>
+<div class="feedback">
+
+<button
+onclick="feedback('Helpful')">
+👍 Helpful
+</button>
+
+<button
+onclick="feedback('Not Helpful')">
+👎 Not Helpful
+</button>
+
+<p id="feedbackText"></p>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
