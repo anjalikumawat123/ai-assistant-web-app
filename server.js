@@ -32,7 +32,7 @@ app.post("/ask", async (req, res) => {
             content: message,
           },
         ],
-       model: "llama-3.1-8b-instant",
+       model: "groq/compound-mini",
       });
 
     res.json({
